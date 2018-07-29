@@ -42,18 +42,9 @@ func autoCert(qnClient *qiniu.Client, Domain, Email string) error {
 		if time.Until(info.Cert.NotAfter.Time) > time.Hour*24*7 {
 			return nil
 		}
-		cert, err := acme.ObtainCert(Email, Domain)
+		upload, err := obtainAndUploadCert(qnClient, Domain, Email)
 		if err != nil {
-			return errors.WithMessage(err, "obtain cert failed")
-		}
-		upload, err := qnClient.UploadCert(qiniu.Cert{
-			Name:       strings.Split(Domain, ".")[0],
-			CommonName: Domain,
-			CA:         string(cert.Certificate),
-			Pri:        string(cert.PrivateKey),
-		})
-		if err != nil {
-			return errors.WithMessage(err, "upload cert failed")
+			return errors.WithMessage(err, "obtain and upload cert failed")
 		}
 		_, err = qnClient.UpdateHttpsConf(Domain, upload.CertID)
 		if err != nil {
@@ -62,9 +53,18 @@ func autoCert(qnClient *qiniu.Client, Domain, Email string) error {
 		_, err = qnClient.DeleteCert(domainInfo.HTTPS.CertID)
 		return errors.WithMessage(err, "delete cert failed")
 	}
+	upload, err := obtainAndUploadCert(qnClient, Domain, Email)
+	if err != nil {
+		return errors.WithMessage(err, "obtain and upload cert failed")
+	}
+	_, err = qnClient.DomainSSLize(Domain, upload.CertID)
+	return errors.WithMessage(err, "sslize domain failed")
+}
+
+func obtainAndUploadCert(qnClient *qiniu.Client, Domain, Email string) (*qiniu.UploadCertResp, error) {
 	cert, err := acme.ObtainCert(Email, Domain)
 	if err != nil {
-		return errors.WithMessage(err, "obtain cert failed")
+		return nil, err
 	}
 	upload, err := qnClient.UploadCert(qiniu.Cert{
 		Name:       strings.Split(Domain, ".")[0],
@@ -73,8 +73,7 @@ func autoCert(qnClient *qiniu.Client, Domain, Email string) error {
 		Pri:        string(cert.PrivateKey),
 	})
 	if err != nil {
-		return errors.WithMessage(err, "upload cert failed")
+		return nil, err
 	}
-	_, err = qnClient.DomainSSLize(Domain, upload.CertID)
-	return errors.WithMessage(err, "sslize domain failed")
+	return upload, err
 }
