@@ -1,0 +1,1142 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "AH7jcN7pvaPDU6UjHdpT081DDGk=",
+			"origin": "github.com/xenolf/lego/vendor/cloud.google.com/go/compute/metadata",
+			"path": "cloud.google.com/go/compute/metadata",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "ptVq5lJL2vx8h99LknLahBTDGPg=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/Azure/azure-sdk-for-go/services/dns/mgmt/2017-09-01/dns",
+			"path": "github.com/Azure/azure-sdk-for-go/services/dns/mgmt/2017-09-01/dns",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "E0PGco6Wn0cOyCgy9G2dC5O+yfs=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/Azure/azure-sdk-for-go/version",
+			"path": "github.com/Azure/azure-sdk-for-go/version",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "LEcK4TQkpIAy5UrMyKm9NOL4N1g=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/Azure/go-autorest/autorest",
+			"path": "github.com/Azure/go-autorest/autorest",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "mF+Nm6cfy7wXD1Pjon8yAVgpiLg=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/Azure/go-autorest/autorest/adal",
+			"path": "github.com/Azure/go-autorest/autorest/adal",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "WGEvmX0KeuJTkncUW9yu7O/NX5M=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/Azure/go-autorest/autorest/azure",
+			"path": "github.com/Azure/go-autorest/autorest/azure",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "9nXCi9qQsYjxCeajJKWttxgEt0I=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/Azure/go-autorest/autorest/date",
+			"path": "github.com/Azure/go-autorest/autorest/date",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "SbBb2GcJNm5GjuPKGL2777QywR4=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/Azure/go-autorest/autorest/to",
+			"path": "github.com/Azure/go-autorest/autorest/to",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "64K3OpmB3XIL+Jf0fHGhPqigkPY=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/JamesClonk/vultr/lib",
+			"path": "github.com/JamesClonk/vultr/lib",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "VkRjbLdEbcTzIy67JVsKtZPIlsI=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/OpenDNS/vegadns2client",
+			"path": "github.com/OpenDNS/vegadns2client",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "bVfF89qg2VyUy+gX6yxRFoA5SXU=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1",
+			"path": "github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "iY/CQqK4zwdJ/k2wvmQKixf+xyg=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/akamai/AkamaiOPEN-edgegrid-golang/configdns-v1",
+			"path": "github.com/akamai/AkamaiOPEN-edgegrid-golang/configdns-v1",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "k4ki6Jc/c3gT3sfkhgKIvjwAVFM=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid",
+			"path": "github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "ILoo4cuW8455tf1YqXwq15ch1zA=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/akamai/AkamaiOPEN-edgegrid-golang/jsonhooks-v1",
+			"path": "github.com/akamai/AkamaiOPEN-edgegrid-golang/jsonhooks-v1",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "gHebXCiSx0TL7aOZ8T0gABC+Hhw=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/aws",
+			"path": "github.com/aws/aws-sdk-go/aws",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "Y9W+4GimK4Fuxq+vyIskVYFRnX4=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/aws/awserr",
+			"path": "github.com/aws/aws-sdk-go/aws/awserr",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "yyYr41HZ1Aq0hWc3J5ijXwYEcac=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/aws/awsutil",
+			"path": "github.com/aws/aws-sdk-go/aws/awsutil",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "hicPtITUionsA+dgs1SpsZUkQu4=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/aws/client",
+			"path": "github.com/aws/aws-sdk-go/aws/client",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "ieAJ+Cvp/PKv1LpUEnUXpc3OI6E=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/aws/client/metadata",
+			"path": "github.com/aws/aws-sdk-go/aws/client/metadata",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "vVSUnICaD9IaBQisCfw0n8zLwig=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/aws/corehandlers",
+			"path": "github.com/aws/aws-sdk-go/aws/corehandlers",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "Vx0pCFTpd23seU1mvbf76Fk9KM4=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/aws/credentials",
+			"path": "github.com/aws/aws-sdk-go/aws/credentials",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "u3GOAJLmdvbuNUeUEcZSEAOeL/0=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/aws/credentials/ec2rolecreds",
+			"path": "github.com/aws/aws-sdk-go/aws/credentials/ec2rolecreds",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "NUJUTWlc1sV8b7WjfiYc4JZbXl0=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/aws/credentials/endpointcreds",
+			"path": "github.com/aws/aws-sdk-go/aws/credentials/endpointcreds",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "JEYqmF83O5n5bHkupAzA6STm0no=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/aws/credentials/stscreds",
+			"path": "github.com/aws/aws-sdk-go/aws/credentials/stscreds",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "HogDW/Wu6ZKTDrQ2HSzG8/vj9Ag=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/aws/defaults",
+			"path": "github.com/aws/aws-sdk-go/aws/defaults",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "pDnK93CqjQ4ROSW8Y/RuHXjv52M=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/aws/ec2metadata",
+			"path": "github.com/aws/aws-sdk-go/aws/ec2metadata",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "w65H4+4es3DilRB/dpDIawRO12w=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/aws/endpoints",
+			"path": "github.com/aws/aws-sdk-go/aws/endpoints",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "xyYIn1mhKJrFSfR0b02jlPFEd7I=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/aws/request",
+			"path": "github.com/aws/aws-sdk-go/aws/request",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "J66FLqo++F1PXLUU8XQqYaageSc=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/aws/session",
+			"path": "github.com/aws/aws-sdk-go/aws/session",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "BqDC+Sxo3hrC6WYvwx1U4OObaT4=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/aws/signer/v4",
+			"path": "github.com/aws/aws-sdk-go/aws/signer/v4",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "wjxQlU1PYxrDRFoL1Vek8Wch7jk=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/internal/sdkio",
+			"path": "github.com/aws/aws-sdk-go/internal/sdkio",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "MYLldFRnsZh21TfCkgkXCT3maPU=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/internal/sdkrand",
+			"path": "github.com/aws/aws-sdk-go/internal/sdkrand",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "04ypv4x12l4q0TksA1zEVsmgpvw=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/internal/shareddefaults",
+			"path": "github.com/aws/aws-sdk-go/internal/shareddefaults",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "NStHCXEvYqG72GknZyv1jaKaeH0=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/private/protocol",
+			"path": "github.com/aws/aws-sdk-go/private/protocol",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "yHfT5DTbeCLs4NE2Rgnqrhe15ls=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/private/protocol/json/jsonutil",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/json/jsonutil",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "R00RL5jJXRYq1iiK1+PGvMfvXyM=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/private/protocol/jsonrpc",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/jsonrpc",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "SBBVYdLcocjdPzMWgDuR8vcOfDQ=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/private/protocol/query",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/query",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "9V1PvtFQ9MObZTc3sa86WcuOtOU=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/private/protocol/query/queryutil",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/query/queryutil",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "/2Ppb4vP/H+B3cM7bOOEeA7Z0iY=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/private/protocol/rest",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/rest",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "ODo+ko8D6unAxZuN1jGzMcN4QCc=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/private/protocol/restxml",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/restxml",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "6zosteWJqUGM9+t9dkANQymMA9s=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/private/protocol/xml/xmlutil",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/xml/xmlutil",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "jyxQ6TEdSl9/j7qC0LCkVMSXkog=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/service/lightsail",
+			"path": "github.com/aws/aws-sdk-go/service/lightsail",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "Hi/sxx81pqe+fI5VrS5+UK2DsDU=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/service/route53",
+			"path": "github.com/aws/aws-sdk-go/service/route53",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "llx3DydC0nTbF0cZoYUjO9P1eZw=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/aws/aws-sdk-go/service/sts",
+			"path": "github.com/aws/aws-sdk-go/service/sts",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "7DworssbRuusENGxGhOv/rLgC7E=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/cpu/goacmedns",
+			"path": "github.com/cpu/goacmedns",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "dvabztWVQX8f6oMLRyv4dLH+TGY=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/davecgh/go-spew/spew",
+			"path": "github.com/davecgh/go-spew/spew",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "2kWHR9haxMvRcrTG/0rR0FD+DlI=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/decker502/dnspod-go",
+			"path": "github.com/decker502/dnspod-go",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "CGyjgtLaX55/z70PqkVB/xpLeIA=",
+			"path": "github.com/denverdino/aliyungo/common",
+			"revision": "d98ca8599d8e7b6913c1a5e7dbb2066739d0cd2a",
+			"revisionTime": "2018-07-20T08:11:55Z"
+		},
+		{
+			"checksumSHA1": "at2TCvaAzU3jBW7yngHYVD9e7EI=",
+			"path": "github.com/denverdino/aliyungo/dns",
+			"revision": "d98ca8599d8e7b6913c1a5e7dbb2066739d0cd2a",
+			"revisionTime": "2018-07-20T08:11:55Z"
+		},
+		{
+			"checksumSHA1": "ZSpVJldK4F8joh8pOryB5SaSn8s=",
+			"path": "github.com/denverdino/aliyungo/util",
+			"revision": "d98ca8599d8e7b6913c1a5e7dbb2066739d0cd2a",
+			"revisionTime": "2018-07-20T08:11:55Z"
+		},
+		{
+			"checksumSHA1": "EClp1nY9eQzh2mQTTtPt/r5HXPE=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/dgrijalva/jwt-go",
+			"path": "github.com/dgrijalva/jwt-go",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "OtVhrFe9rOmBuQc1QKY4Epll27g=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/dnsimple/dnsimple-go/dnsimple",
+			"path": "github.com/dnsimple/dnsimple-go/dnsimple",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "R325LerW34YpnB+Iip79wlgbFaQ=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/edeckers/auroradnsclient",
+			"path": "github.com/edeckers/auroradnsclient",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "2Nw5BYdOcAR0AIOMjvU5/650lvs=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/edeckers/auroradnsclient/records",
+			"path": "github.com/edeckers/auroradnsclient/records",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "j7+gb6QTstntpvDpfzPv+Jyio+g=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/edeckers/auroradnsclient/requests",
+			"path": "github.com/edeckers/auroradnsclient/requests",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "rs4h8cNaL23/0pu6e9gXDCPLylA=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/edeckers/auroradnsclient/requests/errors",
+			"path": "github.com/edeckers/auroradnsclient/requests/errors",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "dsXLh0d2KV9HEnaJhJZcDTIFntk=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/edeckers/auroradnsclient/tokens",
+			"path": "github.com/edeckers/auroradnsclient/tokens",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "zGDq6AotrF5lnSNVhWLby40GcAU=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/edeckers/auroradnsclient/zones",
+			"path": "github.com/edeckers/auroradnsclient/zones",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "mlkeIgp3HohP5fQ11wDVRmKUy4A=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/exoscale/egoscale",
+			"path": "github.com/exoscale/egoscale",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "DerRl2OV6qd33NKXF8LufZ3qLo8=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/go-ini/ini",
+			"path": "github.com/go-ini/ini",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "Pyou8mceOASSFxc7GeXZuVdSMi0=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/golang/protobuf/proto",
+			"path": "github.com/golang/protobuf/proto",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "p3IB18uJRs4dL2K5yx24MrLYE9A=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/google/go-querystring/query",
+			"path": "github.com/google/go-querystring/query",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "ebp0MGRYyjpLxW3CxbQAQntWMmc=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/google/uuid",
+			"path": "github.com/google/uuid",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "pPBZEPoqNQblY9l16G7uuMbgI7I=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/jinzhu/copier",
+			"path": "github.com/jinzhu/copier",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "q1lrlObp9XHB3aAkOgEljyLFAXY=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/jmespath/go-jmespath",
+			"path": "github.com/jmespath/go-jmespath",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "qF7UhDT4xGZdFBuaxElqT/h/W8g=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/json-iterator/go",
+			"path": "github.com/json-iterator/go",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "mQW19Dsgb27B1eb5t8ClRPH6SMo=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/juju/ratelimit",
+			"path": "github.com/juju/ratelimit",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "/X4Dix/Qb6Tfmcly1TmoAw0aFxQ=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/miekg/dns",
+			"path": "github.com/miekg/dns",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "3IjbD93KV5s3qz/JBTq0xvIlv5A=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/mitchellh/go-homedir",
+			"path": "github.com/mitchellh/go-homedir",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "fFKESyJ3FgvrYHQgDIIzwlNvFDk=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/modern-go/concurrent",
+			"path": "github.com/modern-go/concurrent",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "f0/HzZ0NfTWbcj62ED233ic+trI=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/modern-go/reflect2",
+			"path": "github.com/modern-go/reflect2",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "lZk8GsorlpFDrvH2Dp4Nt9fpJug=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/namedotcom/go/namecom",
+			"path": "github.com/namedotcom/go/namecom",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "nqlG6Brimf7qCHRezbS7rrRinjw=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/ovh/go-ovh/ovh",
+			"path": "github.com/ovh/go-ovh/ovh",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "ljd3FhYRJ91cLZz3wsH9BQQ2JbA=",
+			"path": "github.com/pkg/errors",
+			"revision": "816c9085562cd7ee03e7f8188a1cfd942858cded",
+			"revisionTime": "2018-03-11T21:45:15Z"
+		},
+		{
+			"checksumSHA1": "LuFv4/jlrmFNnDb/5SCSEPAM9vU=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/pmezard/go-difflib/difflib",
+			"path": "github.com/pmezard/go-difflib/difflib",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "S8HOwhDrcgqDyywBZHDVf0/8j0Q=",
+			"path": "github.com/qiniu/api.v7/auth/qbox",
+			"revision": "056764add0530a5ff576eaee3a2ccc689d1769ad",
+			"revisionTime": "2018-07-19T07:43:34Z"
+		},
+		{
+			"checksumSHA1": "nUyWDaL427ctaDO2iWjmQrvwwZE=",
+			"path": "github.com/qiniu/api.v7/conf",
+			"revision": "056764add0530a5ff576eaee3a2ccc689d1769ad",
+			"revisionTime": "2018-07-19T07:43:34Z"
+		},
+		{
+			"checksumSHA1": "g5gqSqUO071V3ULvUGWT8uaFB8g=",
+			"path": "github.com/qiniu/x/bytes.v7/seekable",
+			"revision": "f512abcf45ab4e2ba0fd4784c57b53d495997d66",
+			"revisionTime": "2015-07-21T03:41:13Z"
+		},
+		{
+			"checksumSHA1": "BnbpZ5+fV+I56lsERgpRaRRoqt0=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/sacloud/libsacloud",
+			"path": "github.com/sacloud/libsacloud",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "G3QC2O64Xn89qJ/Axm8Scy7krCY=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/sacloud/libsacloud/api",
+			"path": "github.com/sacloud/libsacloud/api",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "AG1z/D5h8zxLwGTob4dxyZBylmU=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/sacloud/libsacloud/sacloud",
+			"path": "github.com/sacloud/libsacloud/sacloud",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "xFjyZ3OaKKGcEk7A809HKwNxDs4=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/sacloud/libsacloud/sacloud/ostype",
+			"path": "github.com/sacloud/libsacloud/sacloud/ostype",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "ua2QhRjKiZP5afbG6KoJQMNPpt4=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/sirupsen/logrus",
+			"path": "github.com/sirupsen/logrus",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "0OEpYtJ2I1dldzh6+aEx/dkvyNk=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/stretchr/testify/assert",
+			"path": "github.com/stretchr/testify/assert",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "C1927eSga1LukaYQmd+lsQDXKbM=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/timewasted/linode",
+			"path": "github.com/timewasted/linode",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "OTSCIPokF6c1bPGP9Tu9bjNbdJs=",
+			"origin": "github.com/xenolf/lego/vendor/github.com/timewasted/linode/dns",
+			"path": "github.com/timewasted/linode/dns",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "3lLW0RH9ABHSeO2GWz8Th6mbpZU=",
+			"path": "github.com/xenolf/lego/acme",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "CARCjcQthzCLPHhJ+dukfu7Bhpk=",
+			"path": "github.com/xenolf/lego/log",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "ozDTF9pRgpPR89GnkFVKUn03cb8=",
+			"path": "github.com/xenolf/lego/platform/config/env",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "OVelAEB7ZihyvlEFl6r1kNtbXrw=",
+			"path": "github.com/xenolf/lego/providers/dns",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "Nmn3q0vMRubW8p3L/7t+VQF6RYw=",
+			"path": "github.com/xenolf/lego/providers/dns/acmedns",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "VnolXr1Q+q5Eln+nO1B8FLIb8WY=",
+			"path": "github.com/xenolf/lego/providers/dns/alicloud",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "nM/9oojd3hMeZCo0Zz+k/RSxPsM=",
+			"path": "github.com/xenolf/lego/providers/dns/auroradns",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "ucURr5LsWS7vUaMp+aC5ZsNfkRc=",
+			"path": "github.com/xenolf/lego/providers/dns/azure",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "loYt+MdHKtnZX4t1m5ZBIOJjdLs=",
+			"path": "github.com/xenolf/lego/providers/dns/bluecat",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "uSA9yutw+hnMOC/g+mUCZwikZkk=",
+			"path": "github.com/xenolf/lego/providers/dns/cloudflare",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "IesKNaIxFqPd3u46aMWT0oX2rVc=",
+			"path": "github.com/xenolf/lego/providers/dns/cloudxns",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "Cwsk5Hu6hu2CbAfxuO49I0y7zp4=",
+			"path": "github.com/xenolf/lego/providers/dns/digitalocean",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "a3VIfJVfsQMeVeDe5SdgLY/RajA=",
+			"path": "github.com/xenolf/lego/providers/dns/dnsimple",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "AE/yVEQW3yN6zimFaV01++x0hGg=",
+			"path": "github.com/xenolf/lego/providers/dns/dnsmadeeasy",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "pTUN3bpLCWP104LwDKl0sjhBC0Q=",
+			"path": "github.com/xenolf/lego/providers/dns/dnspod",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "ELDq/O1bE2WUxsX5wETVYx9WLNM=",
+			"path": "github.com/xenolf/lego/providers/dns/duckdns",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "KapGlZNJ1cEZ0SDaE6CtALlCRBw=",
+			"path": "github.com/xenolf/lego/providers/dns/dyn",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "Ul+V9jEiNHoR1vy8klfDCkzZqyA=",
+			"path": "github.com/xenolf/lego/providers/dns/exec",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "X0dcGGvgxeX8+dMyF85PUHkeZU8=",
+			"path": "github.com/xenolf/lego/providers/dns/exoscale",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "vZiLhAN1W2PsB2Z8ie2m8wQz2q4=",
+			"path": "github.com/xenolf/lego/providers/dns/fastdns",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "uI1hIXPIlnU7Re9sEemli8doL14=",
+			"path": "github.com/xenolf/lego/providers/dns/gandi",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "xTT3U8p+cjDxQUAbWh3hRzLl2d0=",
+			"path": "github.com/xenolf/lego/providers/dns/gandiv5",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "ZJy3s0v3EkcznhbNkN3k+vyQOfo=",
+			"path": "github.com/xenolf/lego/providers/dns/gcloud",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "wwgTjpyu5Us1FApdC9TEdxKEhC0=",
+			"path": "github.com/xenolf/lego/providers/dns/glesys",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "mkdhbUdNgcp5wtpjyNiBPl7V3Fc=",
+			"path": "github.com/xenolf/lego/providers/dns/godaddy",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "i1yz9mdAnDoqhPD6+vsMiuEAW/o=",
+			"path": "github.com/xenolf/lego/providers/dns/lightsail",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "3B9fwP4KpcVhhbPIdpRBZSxZmQY=",
+			"path": "github.com/xenolf/lego/providers/dns/linode",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "YqakJl2AbUNsBEaTd8qmrt63f+8=",
+			"path": "github.com/xenolf/lego/providers/dns/namecheap",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "wRg0gT2iTm4Dm8vUgqPg6AcuXdQ=",
+			"path": "github.com/xenolf/lego/providers/dns/namedotcom",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "w1JE9IKo8NcK/aUwH8NHb8kKUpw=",
+			"path": "github.com/xenolf/lego/providers/dns/nifcloud",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "4p/bBwcwdkggTXEba654uyqlzkY=",
+			"path": "github.com/xenolf/lego/providers/dns/ns1",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "oV3hxCfkN/IO2iougTPfK6tHs9g=",
+			"path": "github.com/xenolf/lego/providers/dns/otc",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "eZz7RiuvZVKP7BjQJdULIbrfHk8=",
+			"path": "github.com/xenolf/lego/providers/dns/ovh",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "X/wt87LWOfQxA9Z9+H/vAvbmH+k=",
+			"path": "github.com/xenolf/lego/providers/dns/pdns",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "9hRJUPyTQGP3IpV8O6+DbsR2Kkc=",
+			"path": "github.com/xenolf/lego/providers/dns/rackspace",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "EUnF7MeOjnwxqCjyOa3eiWD03MY=",
+			"path": "github.com/xenolf/lego/providers/dns/rfc2136",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "u5RKuJKaYfGlCYhjhTf8uxNVx00=",
+			"path": "github.com/xenolf/lego/providers/dns/route53",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "Igc1KBljphpEfm1mFpV8DbTntOo=",
+			"path": "github.com/xenolf/lego/providers/dns/sakuracloud",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "HfeEgdTKaTtrS9Jv3+7zW6faW7c=",
+			"path": "github.com/xenolf/lego/providers/dns/vegadns",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "g3smahs81kW+6DIZHzcm5uyHEUQ=",
+			"path": "github.com/xenolf/lego/providers/dns/vultr",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "VqyzfAMKyP6SoLnPHcwhkrICBo0=",
+			"origin": "github.com/xenolf/lego/vendor/golang.org/x/crypto/ed25519",
+			"path": "golang.org/x/crypto/ed25519",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "0JTAFXPkankmWcZGQJGScLDiaN8=",
+			"origin": "github.com/xenolf/lego/vendor/golang.org/x/crypto/ed25519/internal/edwards25519",
+			"path": "golang.org/x/crypto/ed25519/internal/edwards25519",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "AaKVj98Ox8zTwHJdNoQc4hNrcIc=",
+			"origin": "github.com/xenolf/lego/vendor/golang.org/x/crypto/ocsp",
+			"path": "golang.org/x/crypto/ocsp",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "BGm8lKZmvJbf/YOJLeL1rw2WVjA=",
+			"origin": "github.com/xenolf/lego/vendor/golang.org/x/crypto/ssh/terminal",
+			"path": "golang.org/x/crypto/ssh/terminal",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "NjyXtXsaf0ulRJn6HQSP1FqGL4A=",
+			"origin": "github.com/xenolf/lego/vendor/golang.org/x/net/bpf",
+			"path": "golang.org/x/net/bpf",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "GtamqiJoL7PGHsN454AoffBFMa8=",
+			"origin": "github.com/xenolf/lego/vendor/golang.org/x/net/context",
+			"path": "golang.org/x/net/context",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "WHc3uByvGaMcnSoI21fhzYgbOgg=",
+			"origin": "github.com/xenolf/lego/vendor/golang.org/x/net/context/ctxhttp",
+			"path": "golang.org/x/net/context/ctxhttp",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "8oJoT8rfokzpkJ19eNhRs2JgRxI=",
+			"origin": "github.com/xenolf/lego/vendor/golang.org/x/net/internal/iana",
+			"path": "golang.org/x/net/internal/iana",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "YsXlbexuTtUXHyhSv927ILOkf6A=",
+			"origin": "github.com/xenolf/lego/vendor/golang.org/x/net/internal/socket",
+			"path": "golang.org/x/net/internal/socket",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "sO3eKeIVIRXaRtmWbqGihYpJXpg=",
+			"origin": "github.com/xenolf/lego/vendor/golang.org/x/net/ipv4",
+			"path": "golang.org/x/net/ipv4",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "xqt5auCDSuvg5dm07p60loM67/A=",
+			"origin": "github.com/xenolf/lego/vendor/golang.org/x/net/ipv6",
+			"path": "golang.org/x/net/ipv6",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "u2GsT6jbtQZX67lwkXvwSqIC2Q4=",
+			"origin": "github.com/xenolf/lego/vendor/golang.org/x/oauth2",
+			"path": "golang.org/x/oauth2",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "z7mSaGccufg15ki2YPd+M5PlsUc=",
+			"origin": "github.com/xenolf/lego/vendor/golang.org/x/oauth2/google",
+			"path": "golang.org/x/oauth2/google",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "usB28vqcSrnYAqpQaJksguVZiew=",
+			"origin": "github.com/xenolf/lego/vendor/golang.org/x/oauth2/internal",
+			"path": "golang.org/x/oauth2/internal",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "huVltYnXdRFDJLgp/ZP9IALzG7g=",
+			"origin": "github.com/xenolf/lego/vendor/golang.org/x/oauth2/jws",
+			"path": "golang.org/x/oauth2/jws",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "QPndO4ODVdEBILRhJ6869UDAoHc=",
+			"origin": "github.com/xenolf/lego/vendor/golang.org/x/oauth2/jwt",
+			"path": "golang.org/x/oauth2/jwt",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "DxmCVHC0cPSDKbHkNZPTHaSpssw=",
+			"origin": "github.com/xenolf/lego/vendor/golang.org/x/sys/unix",
+			"path": "golang.org/x/sys/unix",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "m5QCvoZ2KaoLTG9VWjYNonM08b8=",
+			"origin": "github.com/xenolf/lego/vendor/golang.org/x/sys/windows",
+			"path": "golang.org/x/sys/windows",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "Xxg9YXauyvjS0h9mCyaCkZ4uVb4=",
+			"origin": "github.com/xenolf/lego/vendor/google.golang.org/api/dns/v1",
+			"path": "google.golang.org/api/dns/v1",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "RIKH6cQNe0mczH5HxseRIpEYidE=",
+			"origin": "github.com/xenolf/lego/vendor/google.golang.org/api/gensupport",
+			"path": "google.golang.org/api/gensupport",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "BWKmb7kGYbfbvXO6E7tCpTh9zKE=",
+			"origin": "github.com/xenolf/lego/vendor/google.golang.org/api/googleapi",
+			"path": "google.golang.org/api/googleapi",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "1K0JxrUfDqAB3MyRiU1LKjfHyf4=",
+			"origin": "github.com/xenolf/lego/vendor/google.golang.org/api/googleapi/internal/uritemplates",
+			"path": "google.golang.org/api/googleapi/internal/uritemplates",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "HWj+YwYrW0wd8R+M4GlZPoPQUUo=",
+			"origin": "github.com/xenolf/lego/vendor/google.golang.org/appengine",
+			"path": "google.golang.org/appengine",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "2PeIxkIqfK2OhBSoGSPaMkbV3RM=",
+			"origin": "github.com/xenolf/lego/vendor/google.golang.org/appengine/internal",
+			"path": "google.golang.org/appengine/internal",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "opmaaLRXyrVDJ6a+poG9RyElLTw=",
+			"origin": "github.com/xenolf/lego/vendor/google.golang.org/appengine/internal/app_identity",
+			"path": "google.golang.org/appengine/internal/app_identity",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "7YL8Hz2LBDdKh8SD4eVvJVSgfAQ=",
+			"origin": "github.com/xenolf/lego/vendor/google.golang.org/appengine/internal/base",
+			"path": "google.golang.org/appengine/internal/base",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "gfdbHUy+G3zDgQsqms4CVeSCt7A=",
+			"origin": "github.com/xenolf/lego/vendor/google.golang.org/appengine/internal/datastore",
+			"path": "google.golang.org/appengine/internal/datastore",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "X7FgmjixIu0LvcOaMkLaMdJL50o=",
+			"origin": "github.com/xenolf/lego/vendor/google.golang.org/appengine/internal/log",
+			"path": "google.golang.org/appengine/internal/log",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "lMn9hQobQweyRieKyvMFlW95pHw=",
+			"origin": "github.com/xenolf/lego/vendor/google.golang.org/appengine/internal/modules",
+			"path": "google.golang.org/appengine/internal/modules",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "SVUFcZ6oyDF8wfcNLZZH5xDcVYI=",
+			"origin": "github.com/xenolf/lego/vendor/google.golang.org/appengine/internal/remote_api",
+			"path": "google.golang.org/appengine/internal/remote_api",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "ZUXfdk1JiSf0BUfkQxgRRZSjATg=",
+			"origin": "github.com/xenolf/lego/vendor/google.golang.org/appengine/internal/urlfetch",
+			"path": "google.golang.org/appengine/internal/urlfetch",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "akOV9pYnCbcPA8wJUutSQVibdyg=",
+			"origin": "github.com/xenolf/lego/vendor/google.golang.org/appengine/urlfetch",
+			"path": "google.golang.org/appengine/urlfetch",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "1ytAUgZlBa9SK5JbHDEV4T68KF4=",
+			"origin": "github.com/xenolf/lego/vendor/gopkg.in/ini.v1",
+			"path": "gopkg.in/ini.v1",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "uOY+V62vyPFerpl1oYb9iwHZIl0=",
+			"origin": "github.com/xenolf/lego/vendor/gopkg.in/ns1/ns1-go.v2/rest",
+			"path": "gopkg.in/ns1/ns1-go.v2/rest",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "tdMxXKsUHn3yZpur14ZNLMVyQJM=",
+			"origin": "github.com/xenolf/lego/vendor/gopkg.in/ns1/ns1-go.v2/rest/model/account",
+			"path": "gopkg.in/ns1/ns1-go.v2/rest/model/account",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "dtZH4FFaFTRO8zKr8PiaIS8N7F4=",
+			"origin": "github.com/xenolf/lego/vendor/gopkg.in/ns1/ns1-go.v2/rest/model/data",
+			"path": "gopkg.in/ns1/ns1-go.v2/rest/model/data",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "tYroX+z6XmQblwi7gj7i8g9BM54=",
+			"origin": "github.com/xenolf/lego/vendor/gopkg.in/ns1/ns1-go.v2/rest/model/dns",
+			"path": "gopkg.in/ns1/ns1-go.v2/rest/model/dns",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "CuurmNep8iMdYFodxRxAeewowsQ=",
+			"origin": "github.com/xenolf/lego/vendor/gopkg.in/ns1/ns1-go.v2/rest/model/filter",
+			"path": "gopkg.in/ns1/ns1-go.v2/rest/model/filter",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "B0C8F5th11AHl1fo8k0I8+DvrjE=",
+			"origin": "github.com/xenolf/lego/vendor/gopkg.in/ns1/ns1-go.v2/rest/model/monitor",
+			"path": "gopkg.in/ns1/ns1-go.v2/rest/model/monitor",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "zrmJMi0E1xZtzPCAJWi23mdf+gs=",
+			"origin": "github.com/xenolf/lego/vendor/gopkg.in/square/go-jose.v2",
+			"path": "gopkg.in/square/go-jose.v2",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "Ho5sr2GbiR8S35IRni7vC54d5Js=",
+			"origin": "github.com/xenolf/lego/vendor/gopkg.in/square/go-jose.v2/cipher",
+			"path": "gopkg.in/square/go-jose.v2/cipher",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "0jvreSdbUPQz+bSHY4ZSGHPbKmw=",
+			"origin": "github.com/xenolf/lego/vendor/gopkg.in/square/go-jose.v2/json",
+			"path": "gopkg.in/square/go-jose.v2/json",
+			"revision": "8b6701514cc0a6285a327908f3f9ce05bcacbffd",
+			"revisionTime": "2018-07-18T15:37:35Z"
+		},
+		{
+			"checksumSHA1": "9t2exgz3OI0iupx2XzTY64dTNTI=",
+			"path": "qiniupkg.com/x/bytes.v7",
+			"revision": "f512abcf45ab4e2ba0fd4784c57b53d495997d66",
+			"revisionTime": "2015-07-21T03:41:13Z"
+		}
+	],
+	"rootPath": "github.com/jqs7/qiniu-auto-cert"
+}

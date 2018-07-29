@@ -1,0 +1,29 @@
+@startuml
+
+title: 自动更新七牛证书
+start
+repeat
+    if (获取域名信息) then (成功)
+        if (判断是否为 HTTPS) then (是)
+            :获取 CertID;
+            if (获取证书信息, 并判断是否会在一周内过期) then (是)
+                :获取新的证书;
+                :上传证书;
+                :修改域名证书;
+                :删除旧的证书;
+            else (否)
+                :继续循环;
+            endif
+        else (否)
+            :获取新的证书;
+            :上传证书;
+            :升级域名为 HTTPS;
+        endif
+    else (失败)
+        :退出程序;
+        stop
+    endif
+repeat while (三小时后)
+stop
+
+@enduml
