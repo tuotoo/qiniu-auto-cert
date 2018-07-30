@@ -2,15 +2,15 @@
 
 ## 安装
 
-`go get -u github.com/jqs7/qiniu-auto-cert`
+`go get -u github.com/tuotoo/qiniu-auto-cert`
 
 ## 原理
 
 借助于 Let's Encrypt 以及[七牛融合 CDN API](https://developer.qiniu.com/fusion/api/4246/the-domain-name)实现七牛 CDN 自定义域名证书的自动更新
 
-![](./res/auto-cert.png)
+![](res/auto-cert.png)
 
-所支持的 DNS 服务商: [xenolf/lego/providers/dns](https://github.com/jqs7/qiniu-auto-cert/tree/master/vendor/github.com/xenolf/lego/providers/dns)
+所支持的 DNS 服务商: [xenolf/lego/providers/dns](https://github.com/tuotoo/qiniu-auto-cert/tree/master/vendor/github.com/xenolf/lego/providers/dns)
 
 ## 使用
 
@@ -27,7 +27,7 @@
 
 ### Systemd
 
-下载并修改 [systemd service](./res/qiniu-auto-cert@.service) 文件中的 Email 和环境变量, 将 service 文件放到 `/etc/systemd/system/` 目录下
+下载并修改 [systemd service](res/qiniu-auto-cert@.service) 文件中的 Email 和环境变量, 将 service 文件放到 `/etc/systemd/system/` 目录下
 
 启动: 
 

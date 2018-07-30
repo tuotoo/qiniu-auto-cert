@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jqs7/qiniu-auto-cert/acme"
-	"github.com/jqs7/qiniu-auto-cert/qiniu"
+	"github.com/tuotoo/qiniu-auto-cert/acme"
+	"github.com/tuotoo/qiniu-auto-cert/qiniu"
 
 	"github.com/pkg/errors"
 )
@@ -75,5 +75,5 @@ func obtainAndUploadCert(qnClient *qiniu.Client, Domain, Email string) (*qiniu.U
 	if err != nil {
 		return nil, err
 	}
-	return upload, err
+	return upload, nil
 }
