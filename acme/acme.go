@@ -75,7 +75,7 @@ func loadPrivateKey(file string) (crypto.PrivateKey, error) {
 	return nil, errors.New("unknown private key type")
 }
 
-func ObtainCert(email, domain string) (*acme.CertificateResource, error) {
+func GetAcmeClient(email string) (*acme.Client, error) {
 	user := User{Email: email}
 
 	var client *acme.Client
@@ -125,6 +125,13 @@ func ObtainCert(email, domain string) (*acme.CertificateResource, error) {
 	if err != nil {
 		return nil, err
 	}
+	return client, nil
+}
 
+func ObtainCert(email, domain string) (*acme.CertificateResource, error) {
+	client, err := GetAcmeClient(email)
+	if err != nil {
+		return nil, err
+	}
 	return client.ObtainCertificate([]string{domain}, false, nil, false)
 }
