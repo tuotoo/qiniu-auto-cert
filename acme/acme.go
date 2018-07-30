@@ -6,6 +6,7 @@ import (
 	"crypto/elliptic"
 	"crypto/rand"
 	"crypto/x509"
+	"encoding/json"
 	"encoding/pem"
 	"errors"
 	"io/ioutil"
@@ -27,12 +28,15 @@ type User struct {
 func (u User) GetEmail() string {
 	return u.Email
 }
+
 func (u User) GetRegistration() *acme.RegistrationResource {
 	return u.Registration
 }
+
 func (u User) GetPrivateKey() crypto.PrivateKey {
 	return u.key
 }
+
 func generatePrivateKey(file string) (crypto.PrivateKey, error) {
 	privateKey, err := ecdsa.GenerateKey(elliptic.P384(), rand.Reader)
 	if err != nil {
@@ -82,9 +86,10 @@ func GetAcmeClient(email string) (*acme.Client, error) {
 	var err error
 	var reg *acme.RegistrationResource
 
-	key, err := loadPrivateKey(path.Join(os.TempDir(), "privateKey"))
+	privateKeyPath := path.Join(os.TempDir(), "qiniu-auto-cert.privateKey")
+	key, err := loadPrivateKey(privateKeyPath)
 	if err != nil {
-		key, err := generatePrivateKey(path.Join(os.TempDir(), "privateKey"))
+		key, err := generatePrivateKey(privateKeyPath)
 		if err != nil {
 			return nil, err
 		}
@@ -133,5 +138,74 @@ func ObtainCert(email, domain string) (*acme.CertificateResource, error) {
 	if err != nil {
 		return nil, err
 	}
-	return client.ObtainCertificate([]string{domain}, false, nil, false)
+	cert, err := loadCertResource(domain)
+	if err != nil {
+		return obtainNewCert(client, domain)
+	}
+	cert, err = client.RenewCertificate(*cert, false, false)
+	if err != nil {
+		return obtainNewCert(client, domain)
+	}
+	if err := saveCertInfo(domain, cert); err != nil {
+		return nil, err
+	}
+	return cert, nil
+}
+
+func obtainNewCert(client *acme.Client, domain string) (*acme.CertificateResource, error) {
+	cert, err := client.ObtainCertificate([]string{domain}, false, nil, false)
+	if err != nil {
+		return nil, err
+	}
+	if err := saveCertInfo(domain, cert); err != nil {
+		return nil, err
+	}
+	return cert, nil
+}
+
+func saveCertInfo(domain string, cert *acme.CertificateResource) error {
+	metaPath := path.Join(os.TempDir(), "qiniu-auto-cert-"+domain+".json")
+	privateKeyPath := path.Join(os.TempDir(), "qiniu-auto-cert-"+domain+".key")
+	certPath := path.Join(os.TempDir(), "qiniu-auto-cert-"+domain+".crt")
+	metaData, err := json.Marshal(cert)
+	if err != nil {
+		return err
+	}
+	err = ioutil.WriteFile(metaPath, metaData, 0600)
+	if err != nil {
+		return err
+	}
+	err = ioutil.WriteFile(privateKeyPath, cert.PrivateKey, 0600)
+	if err != nil {
+		return err
+	}
+	err = ioutil.WriteFile(certPath, cert.Certificate, 0600)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func loadCertResource(domain string) (*acme.CertificateResource, error) {
+	metaPath := path.Join(os.TempDir(), "qiniu-auto-cert-"+domain+".json")
+	privateKeyPath := path.Join(os.TempDir(), "qiniu-auto-cert-"+domain+".key")
+	certPath := path.Join(os.TempDir(), "qiniu-auto-cert-"+domain+".crt")
+	cert := new(acme.CertificateResource)
+	meta, err := ioutil.ReadFile(metaPath)
+	if err != nil {
+		return nil, err
+	}
+	if err := json.Unmarshal(meta, cert); err != nil {
+		return nil, err
+	}
+	privateKey, err := ioutil.ReadFile(privateKeyPath)
+	if err != nil {
+		return nil, err
+	}
+	cert.PrivateKey = privateKey
+	certData, err := ioutil.ReadFile(certPath)
+	if err != nil {
+		return nil, err
+	}
+	cert.Certificate = certData
 }
