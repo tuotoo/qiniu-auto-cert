@@ -208,4 +208,5 @@ func loadCertResource(domain string) (*acme.CertificateResource, error) {
 		return nil, err
 	}
 	cert.Certificate = certData
+	return cert, nil
 }
