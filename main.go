@@ -39,7 +39,7 @@ func autoCert(qnClient *qiniu.Client, Domain, Email string) error {
 		if err != nil {
 			return errors.WithMessage(err, "get cert info failed")
 		}
-		if time.Until(info.Cert.NotAfter.Time) > time.Hour*24*7 {
+		if time.Until(info.Cert.NotAfter.Time) > time.Hour*24*30 {
 			return nil
 		}
 		upload, err := obtainAndUploadCert(qnClient, Domain, Email)
