@@ -2,3 +2,5 @@
 qiniu-auto-cert
 
 privateKey
+
+dist/

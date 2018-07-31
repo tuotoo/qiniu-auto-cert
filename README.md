@@ -2,6 +2,10 @@
 
 ## 安装
 
+从 [release](https://github.com/tuotoo/qiniu-auto-cert/releases) 下载稳定版本
+
+或者编译安装
+
 `go get -u github.com/tuotoo/qiniu-auto-cert`
 
 ## 原理
