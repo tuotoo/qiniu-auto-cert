@@ -13,7 +13,7 @@ archive:
     386: i386
     amd64: x86_64
   files:
-    - LICENCE
+    - LICENSE
     - README.md
     - res/*
 checksum:
