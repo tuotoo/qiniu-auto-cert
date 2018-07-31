@@ -110,7 +110,6 @@ func (c *Client) UpdateHttpsConf(domain, certID string) (*CodeErr, error) {
 	if err != nil {
 		return nil, err
 	}
-	fmt.Println(string(b))
 	resp := &CodeErr{}
 	if err := json.Unmarshal(b, resp); err != nil {
 		return nil, err
