@@ -10,18 +10,20 @@ import (
 	"encoding/pem"
 	"errors"
 	"io/ioutil"
+	"log"
 	"os"
 	"path"
 
-	"github.com/xenolf/lego/acme"
+	"github.com/xenolf/lego/certificate"
+	"github.com/xenolf/lego/challenge"
+	"github.com/xenolf/lego/lego"
 	"github.com/xenolf/lego/providers/dns"
+	"github.com/xenolf/lego/registration"
 )
-
-const CADirURL = "https://acme-v02.api.letsencrypt.org/directory"
 
 type User struct {
 	Email        string
-	Registration *acme.RegistrationResource
+	Registration *registration.Resource
 	key          crypto.PrivateKey
 }
 
@@ -29,7 +31,7 @@ func (u User) GetEmail() string {
 	return u.Email
 }
 
-func (u User) GetRegistration() *acme.RegistrationResource {
+func (u User) GetRegistration() *registration.Resource {
 	return u.Registration
 }
 
@@ -54,9 +56,16 @@ func generatePrivateKey(file string) (crypto.PrivateKey, error) {
 	if err != nil {
 		return nil, err
 	}
+	defer func() {
+		if err := certOut.Close(); err != nil {
+			log.Println("close", file, "error: ", err)
+		}
+	}()
 
-	pem.Encode(certOut, &pemKey)
-	certOut.Close()
+	err = pem.Encode(certOut, &pemKey)
+	if err != nil {
+		return nil, err
+	}
 
 	return privateKey, nil
 }
@@ -79,12 +88,12 @@ func loadPrivateKey(file string) (crypto.PrivateKey, error) {
 	return nil, errors.New("unknown private key type")
 }
 
-func GetAcmeClient(email string) (*acme.Client, error) {
+func GetAcmeClient(email string) (*lego.Client, error) {
 	user := User{Email: email}
 
-	var client *acme.Client
+	var client *lego.Client
 	var err error
-	var reg *acme.RegistrationResource
+	var reg *registration.Resource
 
 	privateKeyPath := path.Join(os.TempDir(), "qiniu-auto-cert.privateKey")
 	key, err := loadPrivateKey(privateKeyPath)
@@ -95,45 +104,44 @@ func GetAcmeClient(email string) (*acme.Client, error) {
 		}
 		user.key = key
 
-		client, err = acme.NewClient(CADirURL, &user, acme.RSA2048)
+		client, err = lego.NewClient(lego.NewConfig(user))
 		if err != nil {
 			return nil, err
 		}
 
-		reg, err = client.Register(true)
+		reg, err = client.Registration.Register(registration.RegisterOptions{TermsOfServiceAgreed: true})
 		if err != nil {
 			return nil, err
 		}
 	} else {
 		user.key = key
-		client, err = acme.NewClient(CADirURL, &user, acme.RSA2048)
+		client, err = lego.NewClient(lego.NewConfig(user))
 		if err != nil {
 			return nil, err
 		}
 
-		reg, err = client.ResolveAccountByKey()
+		reg, err = client.Registration.ResolveAccountByKey()
 		if err != nil {
 			return nil, err
 		}
 	}
 
 	user.Registration = reg
-	client.SetHTTPAddress(":5002")
-	client.SetTLSAddress(":5001")
 
 	provider, err := dns.NewDNSChallengeProviderByName(os.Getenv("DNS_PROVIDER"))
 	if err != nil {
 		return nil, err
 	}
-	client.ExcludeChallenges([]acme.Challenge{acme.HTTP01, acme.TLSALPN01})
-	err = client.SetChallengeProvider(acme.DNS01, provider)
+	client.Challenge.Remove(challenge.HTTP01)
+	client.Challenge.Remove(challenge.TLSALPN01)
+	err = client.Challenge.SetDNS01Provider(provider)
 	if err != nil {
 		return nil, err
 	}
 	return client, nil
 }
 
-func ObtainCert(email, domain string) (*acme.CertificateResource, error) {
+func ObtainCert(email, domain string) (*certificate.Resource, error) {
 	client, err := GetAcmeClient(email)
 	if err != nil {
 		return nil, err
@@ -142,7 +150,8 @@ func ObtainCert(email, domain string) (*acme.CertificateResource, error) {
 	if err != nil {
 		return obtainNewCert(client, domain)
 	}
-	cert, err = client.RenewCertificate(*cert, false, false)
+
+	cert, err = client.Certificate.Renew(*cert, false, false)
 	if err != nil {
 		return obtainNewCert(client, domain)
 	}
@@ -152,8 +161,10 @@ func ObtainCert(email, domain string) (*acme.CertificateResource, error) {
 	return cert, nil
 }
 
-func obtainNewCert(client *acme.Client, domain string) (*acme.CertificateResource, error) {
-	cert, err := client.ObtainCertificate([]string{domain}, false, nil, false)
+func obtainNewCert(client *lego.Client, domain string) (*certificate.Resource, error) {
+	cert, err := client.Certificate.Obtain(certificate.ObtainRequest{
+		Domains: []string{domain},
+	})
 	if err != nil {
 		return nil, err
 	}
@@ -163,7 +174,7 @@ func obtainNewCert(client *acme.Client, domain string) (*acme.CertificateResourc
 	return cert, nil
 }
 
-func saveCertInfo(domain string, cert *acme.CertificateResource) error {
+func saveCertInfo(domain string, cert *certificate.Resource) error {
 	metaPath := path.Join(os.TempDir(), "qiniu-auto-cert-"+domain+".json")
 	privateKeyPath := path.Join(os.TempDir(), "qiniu-auto-cert-"+domain+".key")
 	certPath := path.Join(os.TempDir(), "qiniu-auto-cert-"+domain+".crt")
@@ -186,11 +197,11 @@ func saveCertInfo(domain string, cert *acme.CertificateResource) error {
 	return nil
 }
 
-func loadCertResource(domain string) (*acme.CertificateResource, error) {
+func loadCertResource(domain string) (*certificate.Resource, error) {
 	metaPath := path.Join(os.TempDir(), "qiniu-auto-cert-"+domain+".json")
 	privateKeyPath := path.Join(os.TempDir(), "qiniu-auto-cert-"+domain+".key")
 	certPath := path.Join(os.TempDir(), "qiniu-auto-cert-"+domain+".crt")
-	cert := new(acme.CertificateResource)
+	cert := new(certificate.Resource)
 	meta, err := ioutil.ReadFile(metaPath)
 	if err != nil {
 		return nil, err

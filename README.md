@@ -14,7 +14,7 @@
 
 ![](res/auto-cert.png)
 
-所支持的 DNS 服务商: [xenolf/lego/providers/dns](https://github.com/tuotoo/qiniu-auto-cert/tree/master/vendor/github.com/xenolf/lego/providers/dns)
+所支持的 DNS 服务商: [xenolf/lego/providers/dns](https://github.com/xenolf/lego/tree/master/providers/dns)
 
 ## 使用
 
