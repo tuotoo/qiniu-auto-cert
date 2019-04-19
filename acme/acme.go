@@ -127,7 +127,7 @@ func GetAcmeClient(email string) (*acme.Client, error) {
 	}
 	client.ExcludeChallenges([]acme.Challenge{acme.HTTP01, acme.TLSALPN01})
 	acme.RecursiveNameservers = []string{
-		"233.5.5.5:53",
+		"223.5.5.5:53",
 		"1.1.1.1:53",
 	}
 	err = client.SetChallengeProvider(acme.DNS01, provider)
