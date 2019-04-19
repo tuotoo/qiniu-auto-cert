@@ -3,32 +3,37 @@ builds:
   - CGO_ENABLED=0
   goos:
   - darwin
+  - freebsd
   - linux
   - windows
+  goarch:
+  - amd64
+  - arm
+  - mips
+  - mipsle
+  - mips64
+  goarm:
+  - 5
+  - 6
+  - 7
 archive:
-  replacements:
-    darwin: Darwin
-    linux: Linux
-    windows: Windows
-    386: i386
-    amd64: x86_64
+  wrap_in_directory: true
+  format_overrides:
+    - goos: windows
+      format: zip
+  format: gz
   files:
-    - LICENSE
-    - README.md
-    - res/*
+  - none*
 checksum:
   name_template: 'checksums.txt'
 snapshot:
   name_template: "{{ .Tag }}-next"
-changelog:
-  sort: asc
-  filters:
-    exclude:
-    - '^docs:'
-    - '^test:'
 release:
   github:
     owner: tuotoo
     name: qiniu-auto-cert
-git:
-  short_hash: true
+  draft: true
+  prerelease: true
+changelog:
+  skip: true
+
