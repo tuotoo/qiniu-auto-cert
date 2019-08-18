@@ -16,6 +16,7 @@ import (
 
 	"github.com/go-acme/lego/v3/certificate"
 	"github.com/go-acme/lego/v3/challenge"
+	"github.com/go-acme/lego/v3/challenge/dns01"
 	"github.com/go-acme/lego/v3/lego"
 	"github.com/go-acme/lego/v3/providers/dns"
 	"github.com/go-acme/lego/v3/registration"
@@ -134,7 +135,10 @@ func GetAcmeClient(email string) (*lego.Client, error) {
 	}
 	client.Challenge.Remove(challenge.HTTP01)
 	client.Challenge.Remove(challenge.TLSALPN01)
-	err = client.Challenge.SetDNS01Provider(provider)
+	err = client.Challenge.SetDNS01Provider(provider, dns01.AddRecursiveNameservers([]string{
+		"223.5.5.5:53",
+		"1.1.1.1:53",
+	}))
 	if err != nil {
 		return nil, err
 	}
