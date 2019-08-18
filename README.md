@@ -14,7 +14,7 @@
 
 ![](res/auto-cert.png)
 
-所支持的 DNS 服务商: [xenolf/lego/providers/dns](https://github.com/xenolf/lego/tree/master/providers/dns)
+所支持的 DNS 服务商: [lego/dns](https://go-acme.github.io/lego/dns/)
 
 ## 使用
 
@@ -48,5 +48,5 @@
 ## 感谢
 
 - [qiniu-cdn-ssl-autoupdate](https://github.com/daozzg/qiniu-cdn-ssl-autoupdate)
-- [xenolf/lego](https://github.com/xenolf/lego)
+- [go-acme/lego](https://github.com/go-acme/lego)
 - [qiniu/api](https://github.com/qiniu/api.v7)

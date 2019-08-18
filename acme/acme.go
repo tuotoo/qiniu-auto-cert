@@ -14,11 +14,11 @@ import (
 	"os"
 	"path"
 
-	"github.com/xenolf/lego/certificate"
-	"github.com/xenolf/lego/challenge"
-	"github.com/xenolf/lego/lego"
-	"github.com/xenolf/lego/providers/dns"
-	"github.com/xenolf/lego/registration"
+	"github.com/go-acme/lego/v3/certificate"
+	"github.com/go-acme/lego/v3/challenge"
+	"github.com/go-acme/lego/v3/lego"
+	"github.com/go-acme/lego/v3/providers/dns"
+	"github.com/go-acme/lego/v3/registration"
 )
 
 type User struct {
